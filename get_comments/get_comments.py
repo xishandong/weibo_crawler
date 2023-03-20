@@ -19,11 +19,11 @@ class comment_downloader:
         self.url = 'https://m.weibo.cn/comments/hotflow'
         self.id = id
         self.cookies = {
-            '__bid_n': '186f446a34a7241b114207',
-            'FPTOKEN': 'X4H+b0RCi9hx+T+tgFZqc3mIylTBSZ1GPCjLP6lESORD5YFZvpT7vRTSjvsbOQu7CZWdud3ESp75YDW+jPCF1MzB40zj9sgmN054ixJE5/BIPmj9gHH7ezmTV44ylemksgWQIZVzUPxVjWUh74viwkoWeWdJYy1+n/xo5ejNO3jB5HnqcOogMV9R6qx0x4cI3yaaGVAaiztIZREEs/+znJjyx2DPaztT23tg4ArNt47V6+NHhBHsgtmd37KAufwATtvcQNpghYg24I+arUefISTHdS3i5tYokjvzZtpmpedcF2OFGG4a3eejI5xDKPEOu3et1OLDCn+IYbiyAy9ZX0qpLt3/iCG786KeIIfEj6xS8PiNraBc2sZD2OJzScecNEX1IKGn4lK5/g4roe+sbA==|WR8KaUCufzEiFtZlNzHS5lrtqyYqalIKYBMcbWaHueA=|10|aca3515d1c537c2ca7315d6bf689168d',
-            'WEIBOCN_FROM': '1110006030',
-            'SUB': '_2A25JEe1jDeRhGeVO7lsU9SzMyD-IHXVq_fMrrDV6PUJbkdB-LXfFkW1NTX_6HGKPQpn7KKorjW6jWoVPwzPmf1HR',
-            '_T_WM': '83855269844',
+            '__bid_n': 填你的cookie,
+            'FPTOKEN': 填你的cookie,
+            'WEIBOCN_FROM': 填你的cookie,
+            'SUB': 填你的cookie,
+            '_T_WM': 填你的cookie,
             'BAIDU_SSP_lcr': 'https://security.weibo.com/',
             'M_WEIBOCN_PARAMS': f'oid%3D{id}%26luicode%3D20000061%26lfid%3D{id}%26uicode%3D20000061%26fid%3D{id}',
         }
@@ -109,7 +109,7 @@ class comment_downloader:
 
 
 if __name__ == '__main__':
-    c = comment_downloader(4881401625708686)
+    c = comment_downloader(mid)
     items = c.get_comment_by_id()
     for i in items:
         print(i)
