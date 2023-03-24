@@ -84,11 +84,11 @@ class searchKey:
             }
         try:
             pic = [d['url'] for d in mlog['pics']]
-        except KeyError:
+        except:
             pic = None
         try:
             video = [d['videoSrc'] for d in mlog['pics']]
-        except KeyError:
+        except:
             video = None
         item = {
             'time': time,
